@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <title>FMU - 202210.ead-29782310.06 - DESENVOLVIMENTO WEB CLIENTE - GR0613</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    *{padding: 0; margin: 0; box-sizing: border-box;}
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+  </style>
+  </head>
+  <body>
+
+  <!-- Navbar -->
+  <nav class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large" style="display:flex; justify-content: space-between;">
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
+        <i class="fa fa-paw"></i>
+        <b>PetFMU</b>
+      </a>
+      
+      <div>
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  
+        <a href="#sobre" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Sobre</a>
+        <a href="#produtos_servicos" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Produtos e serviços</a>
+        <a href="#clientes" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Clientes</a>
+        <a href="#contato" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contato</a>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#sobre" class="w3-bar-item w3-button w3-padding-large">Sobre</a>
+      <a href="#produtos_servicos" class="w3-bar-item w3-button w3-padding-large">Produtos e serviços</a>
+      <a href="#clientes" class="w3-bar-item w3-button w3-padding-large">Clientes</a>
+      <a href="#contato" class="w3-bar-item w3-button w3-padding-large">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="w3-container w3-red w3-center" style="padding: 0; margin: 0; background-position: center; background-size: cover; background-image: url('https://cdn.pixabay.com/photo/2017/09/25/13/12/cocker-spaniel-2785074_1280.jpg');">
+    <div style="top:0; left: 0; width: auto; height: 90vh; background: rgba(0,0,0,.7); display: flex; align-items: center;justify-content: center;">
+      <div>
+        <h1 class="w3-margin w3-jumbo">Bem-vindo!</h1>
+        <p class="w3-xlarge">Melhor PetShop do mundo!</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- First Grid -->
+  <section id="sobre" class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1><b>PetFMU</b></h1>
+        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      </div>
+
+      <div class="w3-third w3-center">
+        <i class="fa fa-paw fa-5x w3-padding-64 w3-text-red"></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos_servicos" class="w3-row-padding w3-grayscale">
+    <h1 class="w3-margin w3-xlarge" style="text-align: center;">Produtos e serviços</h1>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey" style="height: 300px; padding: 10px; text-align: center;">
+        <i class="fa fa-scissors fa-5x" aria-hidden="true" style="padding-top: 20px;" ></i>
+        <div class="w3-container">
+          <h3>Tosa</h3>
+          <p style="margin-bottom: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p class="w3-opacity">R$ 25,00</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey" style="height: 300px; padding: 10px; text-align: center;">
+        <i class="fa fa-shower fa-5x" aria-hidden="true" style="padding-top: 20px;"></i>
+        <div class="w3-container">
+          <h3>Banho</h3>
+          <p style="margin-bottom: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p class="w3-opacity">R$ 50,00</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey" style="height: 300px; padding: 10px; text-align: center;">
+        <i class="fa fa-shopping-bag fa-5x" aria-hidden="true" style="padding-top: 20px;"></i>
+        <div class="w3-container">
+          <h3>Produtos</h3>
+          <p style="margin-bottom: 10px;">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <ul>
+            <li>Fitinhas e decorativos: <b>R$ 5,00</b></li>
+            <li>Brinquedos: <b>R$ 7,00</b></li>
+            <li>Petiscos: <b>R$ 12,00</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes" class="w3-row-padding w3-grayscale">
+    <h1 class="w3-margin w3-xlarge" style="text-align: center;">Depoimento de clientes</h1>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331257_1280.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Jubileu</h3>
+          <p class="w3-opacity">Nota média</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331257_1280.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Fulano</h3>
+          <p class="w3-opacity">Muito bom!</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331257_1280.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>James Gosling</h3>
+          <p class="w3-opacity">Gostei!</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Contato</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>E-mail</label>
+        <input class="w3-input w3-border" type="email" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Teefone</label>
+        <input class="w3-input w3-border" type="tel" name="Telefone" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensagem</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </section>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Feito por <a href="https://github.com/EliasMurat" target="_blank">Elias Murat</a></p>
+  </footer>
+
+  <script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+  </body>
+</html>
