@@ -1,0 +1,97 @@
+* { 
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif
+}
+
+h1,
+button {
+  font-family: "Montserrat", sans-serif
+}
+
+nav {
+  padding: 10px 25px;
+}
+
+.hero img {
+  height: calc(100vh - 50px);
+}
+
+.hero .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sobre {
+  padding: 30px;
+}
+
+.sobre .text {
+  text-align: justify;
+}
+
+.sobre .logo {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 30px;
+}
+
+.produtos_servicos {
+  padding: 25px 0;
+}
+
+.produtos_servicos h1 {
+  text-align: center;
+}
+
+.container-cliente {
+  padding: 0 30px;
+}
+
+.contato-container {
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  width: 400px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  width: 150px;
+}
+
+@media (max-width: 600px)
+{
+  .sobre .logo {
+    margin-top: 2rem;
+  }
+
+  .container-cliente {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-cliente .card{
+    margin-top: 10px;
+  }
+}
